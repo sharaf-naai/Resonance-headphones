@@ -203,26 +203,42 @@ angle: 0 deg;
 opacity: 1;
 
 }
+footer{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+footer .logo{
+  margin-left: 90px;
+}
+
+#footerlinks{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+#footerlinks p{
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+#footerlinks{
+  display: flex;
+  gap: 15px;
+  padding-right: 20px;
+}
         </style>
     </head>
     <body>
         <header>
             <nav class="logo">
                 <div class="icon">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_2094_215)">
-                            <path d="M4.875 9.75V16.25" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M8.9375 3.25V22.75" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13 6.5V19.5" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17.0625 9.75V16.25" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21.125 8.125V17.875" stroke="#52483E" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_2094_215">
-                                <rect width="26" height="26" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
+                    <img src="../images/logo.svg" alt="Logo" width="100" height="50">
+                    <p>Resonance</p
                 </div>
                 <h1 class="title">Compare</h1>
             </nav>
@@ -332,9 +348,9 @@ opacity: 1;
                     </div>
                     <div>
                         <svg width="24" height="2" viewBox="0 0 24 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1H23" stroke="#D2CDC6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- <path d="M1 1H23" stroke="#D2CDC6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-<p>none</p>
+<p>none</p> -->
                     </div>
                     <div>
                         <svg width="24" height="2" viewBox="0 0 24 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -518,8 +534,19 @@ opacity: 1;
                 </div>
             </section>
         </article>
-        <footer>
-            <h1>Resonance Headphones</h1>
-        </footer>
+            <footer>
+            <hr>
+            <div id="footerlinks">
+                <div class="logo">        
+                    <img src="../images/logo.svg" alt="Logo" width="100" height="50">
+                    <p>Resonance</p>
+                </div>
+                <div id="footerlinks">
+                    <p>© 2025 Resonance. All rights reserved.</p>
+                    <a href=""><img src="../images/DiscordLogo.png" alt=""></a>
+                    <a href=""><img src="../images/XLogo.png" alt=""></a>
+                    <a href=""><img src="../images/MetaLogo.png" alt=""></a>
+                </div>
+    </footer>
     </body>
 </html>
